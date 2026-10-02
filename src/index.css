@@ -26,6 +26,7 @@ html {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 section {
@@ -108,14 +109,16 @@ button {
 .cart-items .cart-total {
   background-color: white;
   padding: 20px;
-  height: 150px;
-  margin-bottom: 30px;
+  height: 170px;
+  margin-bottom: 65px;
+  align-items: flex-end;
+  
 }
 
 .cart-list {
   position: relative;
   background: white;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding: 20px;
 }
 
@@ -140,6 +143,7 @@ button {
 
 .cart-items .cart-content {
   align-items: flex-end;
+  
 }
 
 .cart-items .cart-details h3 {
@@ -214,6 +218,16 @@ button {
   color: #0f3460;
 }
 
+
+.cart-total h5 {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 5px;
+}
+
+
+
 .no-items {
   color: #0f3460;
   font-size: 18px;
@@ -245,3 +259,66 @@ button.delete ion-icon {
     margin: 10px auto;
   }
 }
+
+    .cart-total .wp-button {
+      display: flex;
+      margin-top: 25px;
+      margin-left: -20px;
+      margin-bottom: 5px;
+      align-items: stretch;
+      }
+
+    .btn.btn-wp {
+      
+      background: rgb(59, 215, 59);
+      color: #c10c0c;
+      border-radius: 100px;
+      padding:7px 175px;
+      padding-inline: auto;
+      -webkit-animation: glowing 1500ms infinite;
+      -moz-animation: glowing 1500ms infinite;
+      -o-animation: glowing 1500ms infinite;
+      animation: glowing 1500ms infinite;
+      size-adjust:auto;
+     
+    }
+    
+     button.wp:hover {
+    
+        display:flex;
+        size-adjust:auto;
+        background-color: #33e07270;
+        border-radius: 100px;
+        margin-top: 0px auto;
+        margin-bottom: 0px auto;
+        -webkit-animation: glowing 1500ms infinite;
+        -moz-animation: glowing 1500ms infinite;
+        -o-animation: glowing 1500ms infinite;
+        animation: glowing 1500ms infinite;
+    
+      }
+
+      @-webkit-keyframes glowing {
+        0% {background-color: #c2fbd7cb; -webkit-box-shadow: 0 0 3px #c2fbd7cb;}
+        50% {background-color: #33e07395; -webkit-box-shadow: 0 0 40px #33e07395;}
+        100% {background-color: #c2fbd7cb; -webkit-box-shadow: 0 0 3px #c2fbd7cb;}
+      
+      }
+      @-moz-keyframes glowing {
+        0% {background-color: #c2fbd7cb; -webkit-box-shadow: 0 0 3px #c2fbd7cb;}
+        50% {background-color: #33e07395; -webkit-box-shadow: 0 0 40px #33e07395;}
+        100% {background-color: #c2fbd7cb; -webkit-box-shadow: 0 0 3px #c2fbd7cb;}
+      
+      }
+      @-o-keyframes glowing {
+        0% {background-color: #c2fbd7cb; -webkit-box-shadow: 0 0 3px #c2fbd7cb;}
+        50% {background-color: #33e07395; -webkit-box-shadow: 0 0 40px #33e07395;}
+        100% {background-color: #c2fbd7cb; -webkit-box-shadow: 0 0 3px #c2fbd7cb;}
+      
+      }
+      @keyframes glowing {
+        0% {background-color: #c2fbd7cb; -webkit-box-shadow: 0 0 3px #c2fbd7cb;}
+        50% {background-color: #33e07395; -webkit-box-shadow: 0 0 40px #33e07395;}
+        100% {background-color: #c2fbd7cb; -webkit-box-shadow: 0 0 3px #c2fbd7cb;}
+      
+      }

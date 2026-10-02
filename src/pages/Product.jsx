@@ -5,7 +5,7 @@ import ShopList from "../components/ShopList";
 import { products } from "../utils/products";
 import { useParams } from "react-router-dom";
 import ProductDetails from "../components/ProductDetails/ProductDetails";
-import ProductReviews from "../components/ProductReviews/ProductReviews";
+// import ProductReviews from "../components/ProductReviews/ProductReviews";
 import useWindowScrollToTop from "../hooks/useWindowScrollToTop";
 
 const Product = () => {
@@ -34,7 +34,7 @@ const Product = () => {
     <Fragment>
       <Banner title={selectedProduct?.productName} />
       <ProductDetails selectedProduct={selectedProduct} />
-      <ProductReviews selectedProduct={selectedProduct} />
+      {/* <ProductReviews selectedProduct={selectedProduct} /> */}
       <section className="related-products">
         <Container>
           <h3>You might also like</h3>

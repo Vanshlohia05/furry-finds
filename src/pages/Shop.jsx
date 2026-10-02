@@ -9,13 +9,13 @@ import useWindowScrollToTop from "../hooks/useWindowScrollToTop";
 
 const Shop = () => {
   const [filterList, setFilterList] = useState(
-    products.filter((item) => item.category === "sofa")
+    products.filter((item) => item.category === "Tshirt")
   );
   useWindowScrollToTop();
 
   return (
     <Fragment>
-      <Banner title="product" />
+      <Banner title="Product" />
       <section className="filter-bar">
         <Container className="filter-bar-contianer">
           <Row className="justify-content-center">

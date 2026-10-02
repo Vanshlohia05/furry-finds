@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -28,7 +28,7 @@ const Cart = () => {
         <Row className="justify-content-center">
           <Col md={8}>
             {cartList.length === 0 && (
-              <h1 className="no-items product">No Items are add in Cart</h1>
+              <h1 className="no-items product">No Items are added in Cart</h1>
             )}
             {cartList.map((item) => {
               const productQty = item.price * item.qty;
@@ -43,8 +43,8 @@ const Cart = () => {
                         <Col xs={12} sm={9} className="cart-details">
                           <h3>{item.productName}</h3>
                           <h4>
-                            ${item.price}.00 * {item.qty}
-                            <span>${productQty}.00</span>
+                          ₹ {item.price}.00 * {item.qty}
+                            <span>₹ {productQty}.00</span>
                           </h4>
                         </Col>
                         <Col xs={12} sm={3} className="cartControl">
@@ -77,12 +77,36 @@ const Cart = () => {
             })}
           </Col>
           <Col md={4}>
-            <div className="cart-total">
+            <div className="cart-total justify-content-center">
               <h2>Cart Summary</h2>
-              <div className=" d_flex">
+              <div className="d_flex">
                 <h4>Total Price :</h4>
-                <h3>${totalPrice}.00</h3>
-              </div>
+               <h3>₹ {totalPrice}.00</h3>
+            {cartList.length >= 1 && (
+
+               <Row > <h5>Please order through whatsapp by clicking below.</h5>
+                
+               </Row>  
+              
+
+              )}    
+            </div>
+            <div className="wp-button justify-content-left">
+            
+            {cartList.length >= 1 && (
+
+            <button className="wp">
+              <a href="https://wa.me/+919365324146" className="btn btn-wp">
+                            Whatsapp Link
+                  </a>                   
+                  
+              </button>  
+              )}    
+            </div>
+
+        
+                      
+              
             </div>
           </Col>
         </Row>

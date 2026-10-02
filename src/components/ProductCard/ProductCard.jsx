@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../app/features/cart/cartSlice";
+import { RWebShare } from "react-web-share";
 
 const ProductCard = ({ title, productItem }) => {
   const dispatch = useDispatch();
@@ -39,7 +40,7 @@ const ProductCard = ({ title, productItem }) => {
           <i className="fa fa-star"></i>
         </div>
         <div className="price">
-          <h4>${productItem.price}</h4>
+          <h4>₹ {productItem.price}</h4>
           <button
             aria-label="Add"
             type="submit"
@@ -48,6 +49,27 @@ const ProductCard = ({ title, productItem }) => {
           >
             <ion-icon name="add"></ion-icon>
           </button>
+          <div>
+          <RWebShare
+                 data={{
+                  
+                  // src: `/(shop/${productItem.id})`,
+                  // src: `../shop/\${productItem.id}`,
+                       url:(`www.awwrange.in/shop/${productItem.id}`),
+               }}
+              
+         
+          >
+            <button> <ion-icon name="share"></ion-icon>
+            </button>
+
+          </RWebShare>
+
+
+          </div>
+        
+
+
         </div>
       </div>
     </Col>

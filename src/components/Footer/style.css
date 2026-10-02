@@ -45,6 +45,33 @@ footer ul {
 }
 
 footer li {
+  font-size: 10px;
   margin-bottom: 10px;
   opacity: 0.5;
+}
+
+footer li.wpsx{
+  font-size: 20px;
+  color: #b11616;
+ 
+ 
+}
+
+.btn.btn-wpsx {
+      
+  background: rgb(0, 255, 94);
+  color: #b11616;
+  border-color:  #b11616;
+ 
+  
+}
+
+button.wpsx:hover {
+
+  display:flex;
+  size-adjust:auto;
+  background-color: rgb(37, 237, 127);
+  border-radius: 100px;    
+  margin-top: 0px auto;
+  margin-bottom: 0px auto;
 }

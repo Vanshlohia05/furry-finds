@@ -35,7 +35,7 @@
 }
 
 .product-page p {
-  font-size: 14px;
+  font-size: 20px;
   margin: 20px 0;
 }
 
@@ -56,4 +56,23 @@
   color: white;
   font-size: 17px;
   border-radius: 7px;
+}
+.product-page button.share {
+  margin-top: 20px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 100%;
+
+
+}
+
+ h5 {
+  margin-top: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 5px;
 }
