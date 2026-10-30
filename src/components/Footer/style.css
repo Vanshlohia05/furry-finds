@@ -50,28 +50,38 @@ footer li {
   opacity: 0.5;
 }
 
-footer li.wpsx{
-  font-size: 20px;
-  color: #b11616;
- 
- 
+footer li.wpsx {
+  font-size: 14px;
+  color: #fff;
+  opacity: 1;
+  margin-top: 14px;
 }
 
 .btn.btn-wpsx {
-      
-  background: rgb(0, 255, 94);
-  color: #b11616;
-  border-color:  #b11616;
- 
-  
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #25d366;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
 }
 
-button.wpsx:hover {
+.btn.btn-wpsx:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.55);
+  color: #fff;
+}
 
-  display:flex;
-  size-adjust:auto;
-  background-color: rgb(37, 237, 127);
-  border-radius: 100px;    
-  margin-top: 0px auto;
-  margin-bottom: 0px auto;
+button.wpsx {
+  background: none;
+  border: none;
+  padding: 0;
 }

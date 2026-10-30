@@ -16,6 +16,7 @@ import tshirt14 from "../Images/t-shirt-14.png";
 import bag01 from "../Images/bag-01.png";
 import bag02 from "../Images/bag-02.png";
 import bag03 from "../Images/bag-03.png";
+import mug02F from "../Images/mug-02-F.png";
 
 
 
@@ -23,27 +24,21 @@ import bag03 from "../Images/bag-03.png";
 export const SliderData = [
   {
       id: 1,
-      title: "Coming Soon",
-      desc: "Embrace adventure with our 'Mountain EST 2024' mug. Featuring a bold mountain range design, this sturdy ceramic mug keeps your coffee warm and your spirit inspired.",
-      cover: custmug01,
-  },
-  {
-      id: 2,
-      title: "Coming Soon",
-      desc: "Present your gifts in style with our AWW Range Gift Bag. This light blue bag features a chic bow logo and 'GIFTING BRAND' text, perfect for any special occasion.",
-      cover: bag01,
-  },
-  {
-      id: 3,
-      title: "Coming Soon",
-      desc: "Elevate your style with our Face Art Tote Bag. Featuring a minimalist line drawing of a face and a bold orange circle, this tote combines abstract art with functional fashion.",
+      title: "New Arrival",
+      desc: "Soft, high-quality tees with bold prints. Made for everyday wear.",
       cover: bag02,
   },
   {
-      id: 4,
-      title: "Coming Soon",
-      desc: "Add a touch of elegance to your style with our Elegant Floral Tote Bag. Featuring a delicate floral branch design in shades of brown and beige, this white tote bag is perfect for any occasion",
+      id: 2,
+      title: "Tote Collection",
+      desc: "Carry your world in style. Eco-friendly canvas totes for every occasion.",
       cover: bag03,
+  },
+  {
+      id: 3,
+      title: "Mug Collection",
+      desc: "Start your mornings right. Sleek ceramic mugs crafted for comfort.",
+      cover: mug02F,
   },
 ];
 
@@ -263,7 +258,7 @@ export const products = [
     id: "10",
     productName: "Dynamic Bull T-Shirt",
     imgUrl:  tshirt02,
-     category: "Tshirt",
+     category: "T-Shirts",
     price: 349,
     shortDesc:
       "Premium, soft fabric Striking graphic design with a bronze bull and bold text Comfortable fit for everyday wear",
@@ -293,7 +288,7 @@ export const products = [
     id: "11",
     productName: "Stylish Profit & Loss Hoodie",
     imgUrl: tshirt01,
-     category: "Tshirt",
+     category: "T-Shirts",
     price: 319,
     shortDesc: 
       "Soft, high-quality fabric Unique graphic design Relaxed fit with ribbed cuffs and hem Cozy hood and kangaroo pocket.",
@@ -316,7 +311,7 @@ export const products = [
     id: "12",
     productName: "Playful Bear T-Shirt",
     imgUrl: tshirt03,
-     category: "Tshirt",
+     category: "T-Shirts",
     price: 349,
     shortDesc:
       "Soft, high-quality fabric Adorable bear design with bold text Comfortable fit for everyday wear",
@@ -339,7 +334,7 @@ export const products = [
     id: "13",
     productName: "AURA Moai T-Shirt",
     imgUrl: tshirt06,
-     category: "Tshirt",
+     category: "T-Shirts",
     price: 349,
     shortDesc:
       "Soft, high-quality fabric Stylish Moai statues design with bold text Comfortable fit for everyday wear",
@@ -362,7 +357,7 @@ export const products = [
     id: "14",
     productName: "Festive Antlers T-Shirt",
     imgUrl: tshirt11,
-     category: "Tshirt",
+     category: "T-Shirts",
     price: 299,
     shortDesc:
       "Soft, high-quality fabric Festive antlers design with Happy X'mas text Comfortable fit for everyday wear",
@@ -385,7 +380,7 @@ export const products = [
     id: "15",
     productName: "Ho Ho Ho T-Shirt",
     imgUrl: tshirt10,
-     category: "Tshirt",
+     category: "T-Shirts",
     price: 349,
     shortDesc:
       "Soft, high-quality fabric Cheerful 'Ho ho ho!' design with sparkling stars Comfortable fit for everyday wear",
@@ -404,43 +399,61 @@ export const products = [
     avgRating: 4.8,
   },
 
-  {
-    id: "30",
-    productName: "Happy Bihu T-Shirt",
-    imgUrl: tshirt12,
-     category: "Tshirt",
-    price: 339,
-    shortDesc:
-      "Celebrate the vibrant Bihu festival with our Happy Bihu T-Shirt. Featuring traditional Assamese elements like musical instruments and a decorative motif, this colorful design captures the festive spirit perfectly.",
-    description:
-      "",
 
+
+  {
+    id: "41",
+    productName: "Classic Minimalist Mug",
+    imgUrl: mug02F,
+    category: "Mugs",
+    price: 279,
+    shortDesc:
+      "High-grade ceramic with sleek minimalist finish, perfect for your morning brew.",
+    description:
+      "Start your day with simplicity and style. Our Classic Minimalist Mug is crafted from high-grade ceramic, offering a smooth finish and ergonomic handle for comfortable sipping.",
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Looks fantastic on my desk.",
+      },
+    ],
+    avgRating: 4.7,
   },
-
   {
-    id: "31",
-    productName: "Pepa print T-Shirt",
-    imgUrl: tshirt13,
-     category: "Tshirt",
-    price: 339,
+    id: "50",
+    productName: "Face Art Canvas Tote Bag",
+    imgUrl: bag02,
+    category: "Tote Bags",
+    price: 349,
     shortDesc:
-      "Celebrate the vibrant Bihu festival with our Happy Bihu T-Shirt. Featuring a colorful design with traditional Assamese musical instruments and motifs, this shirt captures the festive spirit perfectly.",
+      "Eco-friendly canvas tote featuring minimalist abstract face art line drawing.",
     description:
-      "",
-  
+      "Elevate your style with our Face Art Tote Bag. Featuring a minimalist line drawing of a face and a bold orange circle, this tote combines abstract art with functional everyday fashion. Made from durable, eco-friendly cotton canvas.",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Very spacious and durable canvas material.",
+      },
+    ],
+    avgRating: 4.9,
   },
-
   {
-    id: "32",
-    productName: "Printed Birds T-Shirt",
-    imgUrl: tshirt14,
-     category: "Tshirt",
-    price: 339,
+    id: "51",
+    productName: "Elegant Floral Canvas Tote Bag",
+    imgUrl: bag03,
+    category: "Tote Bags",
+    price: 349,
     shortDesc:
-      "Make a statement with our Printed Birds T-Shirt. Featuring a vibrant red design with symmetrical birds and floral patterns, this white t-shirt adds a unique and elegant touch to your wardrobe.",
+      "Durable white cotton canvas tote with delicate floral branch artwork in earth tones.",
     description:
-      "",
-  
+      "Add a touch of elegance to your style with our Elegant Floral Tote Bag. Featuring a delicate floral branch design in shades of brown and beige, this white tote bag is perfect for books, groceries, and daily essentials.",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Love the floral design and sturdy straps!",
+      },
+    ],
+    avgRating: 4.8,
   },
 
   // {

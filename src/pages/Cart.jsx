@@ -15,6 +15,16 @@ const Cart = () => {
     (price, item) => price + item.qty * item.price,
     0
   );
+
+  const itemsSummary = cartList
+    .map(
+      (item, index) =>
+        `${index + 1}. ${item.productName} - Qty: ${item.qty} - ₹${item.price * item.qty}`
+    )
+    .join("\n");
+  const cartMessage = `Hello! I would like to place an order from Aww Range:\n\n${itemsSummary}\n\nTotal Price: ₹${totalPrice}\n\nPlease confirm my order.`;
+  const whatsappCartUrl = `https://wa.me/919365324146?text=${encodeURIComponent(cartMessage)}`;
+
   useEffect(() => {
     window.scrollTo(0, 0);
     // if(CartItem.length ===0) {
@@ -94,14 +104,17 @@ const Cart = () => {
             <div className="wp-button justify-content-left">
             
             {cartList.length >= 1 && (
-
-            <button className="wp">
-              <a href="https://wa.me/+919365324146" className="btn btn-wp">
-                            Whatsapp Link
-                  </a>                   
-                  
-              </button>  
-              )}    
+              <button className="wp">
+                <a
+                  href={whatsappCartUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-wp"
+                >
+                  Whatsapp Link
+                </a>
+              </button>
+            )}    
             </div>
 
         

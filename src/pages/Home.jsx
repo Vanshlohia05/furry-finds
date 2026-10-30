@@ -9,7 +9,7 @@ import SliderHome from "../components/Slider";
 
 const Home = () => {
   const newArrivalData = products.filter(
-    (item) => item.category === "Tshirt" || item.category === "Tshirt"
+    (item) => item.category === "T-Shirts" || item.category === "Tshirt"
   );
   // const bestSales = products.filter((item) => item.category === "sofa");
   // useWindowScrollToTop();

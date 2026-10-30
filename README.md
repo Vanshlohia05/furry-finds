@@ -1,48 +1,47 @@
-# Maltimart Ecommerce
+# Furry Finds
+
+Furry Finds is a hyper-minimalist, sleek e-commerce storefront for curated t-shirts, tote bags, and everyday lifestyle accessories.
 
 ## 📌 Live Demo
-https://multimart-ecommerce.onrender.com
+*Coming soon on Vercel (`furryfinds.vercel.app`)*
 
-## 😎 Features
+## 🛍️ Features
 
-- Beauty UI similar to ecommerce website
-- Fully responsive and mobile friendly
-- User can add items to cart
-- User can view details of an item
-- User can show total price in cart
-- In Item page user can add quantity of item to cart instead of click add more and more 
+- Clean, modern, responsive e-commerce UI
+- Mobile-first design built with React & React-Bootstrap
+- Interactive product catalog & category filters
+- Dynamic Cart with real-time totals
+- Minimalist order checkout via WhatsApp
+- Lightweight & fast bundle
 
-## 🚀 What technologies were used?
+## 🚀 Tech Stack
 
-- react.js (create-react-app)
-- react-dom-router
-- react-bootstrap
-- state management using Redux Toolkit
+- **Frontend:** React 18
+- **Routing:** React Router v6
+- **State Management:** Redux Toolkit
+- **Styling:** React-Bootstrap, Bootstrap 5, Custom CSS
+- **Icons:** Ionicons (MIT License)
 
-## How can you clone and tweak this project?
+## 💻 Getting Started Locally
 
-From your command line, first clone this repo:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Vanshlohia05/furry-finds.git
+   ```
 
-```
-# Clone this repository
-$ https://github.com/0mar-helal/multimart-react-ecommerce.git
+2. **Navigate to project directory:**
+   ```bash
+   cd furry-finds/awwrange
+   ```
 
-# Go into the repository
-$ cd multimart-react-ecommerce
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-# Remove current origin repository
-$ git remote remove origin
+4. **Start the local development server:**
+   ```bash
+   npm start
+   ```
 
-```
-
-Then you can install the dependencies using NPM:
-
-```
-# Install dependencies
-$ npm install
-
-# Start development server
-$ npm start
-```
-👨‍💻 Happy coding!
----
+5. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

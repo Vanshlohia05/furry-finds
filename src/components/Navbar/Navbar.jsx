@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./navbar.css";
 import { Link } from "react-router-dom";
@@ -8,14 +8,20 @@ const NavBar = () => {
   const [expand, setExpand] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
   // fixed Header
-  function scrollHandler() {
-    if (window.scrollY >= 100) {
-      setIsFixed(true);
-    } else if (window.scrollY <= 50) {
-      setIsFixed(false);
-    }
-  }
-  window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    const scrollHandler = () => {
+      if (window.scrollY >= 100) {
+        setIsFixed(true);
+      } else if (window.scrollY <= 50) {
+        setIsFixed(false);
+      }
+    };
+    scrollHandler();
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
   // useEffect(()=> {
   //   if(CartItem.length ===0) {
   //     const storedCart = localStorage.getItem("cartItem");
@@ -26,12 +32,12 @@ const NavBar = () => {
     <Navbar
       fixed="top"
       expand="md"
-      className={isFixed ? "navbar fixed" : "navbar"}
+      className={isFixed ? "navbar fixed nav-sticky" : "navbar"}
     >
       <Container className="navbar-container">
         <Navbar.Brand to="/">
           <ion-icon name="bag"></ion-icon>
-          <h1 className="logo">Aww Range</h1>
+          <h1 className="logo">Furry Finds</h1>
         </Navbar.Brand>
         {/* Media cart and toggle */}
         <div className="d-flex">

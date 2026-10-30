@@ -1,0 +1,11 @@
+{
+    "schema_version": 2,
+    "commit": "ae1ecfe176a3386d3b4faa5a9bffa028acdabe85",
+    "indexed_at": "2026-10-03T16:25:49Z",
+    "project": "D-VS-CODE-awwrange-awwrange",
+    "nodes": 204,
+    "edges": 285,
+    "original_size": 2031616,
+    "compressed_size": 146120,
+    "compression_level": 9
+}

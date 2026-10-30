@@ -1,0 +1,26 @@
+--- a/src/__tests__/standalone-runner.js
++++ b/src/__tests__/standalone-runner.js
+@@ -44,7 +44,7 @@ const navbarSrc = fs.readFileSync(path.join(srcDir, "components/Navbar/Navbar.jsx
+ 
+ recordTest("Tier 1", "R1-1", "Navbar imports useEffect from React", () => {
+   assert(
+-    /import\s+[^}]*useEffect[^}]*\s+from\s+["']react["']/.test(navbarSrc),
++    /import\s+{[^}]*useEffect[^}]*}\s+from\s+["']react["']/.test(navbarSrc),
+     "useEffect is not imported from react in Navbar.jsx"
+   );
+ });
+@@ -597,8 +597,10 @@ console.log(`  Passed: ${passed}`);
+ console.log(`  Failed: ${failed}`);
+ console.log("=================================================================");
+ 
+-if (failed > 0) {
+-  process.exit(1);
+-} else {
+-  process.exit(0);
++if (require.main === module) {
++  if (failed > 0) {
++    process.exit(1);
++  } else {
++    process.exit(0);
++  }
+ }

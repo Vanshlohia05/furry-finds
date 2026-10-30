@@ -21,12 +21,14 @@ const ProductCard = ({ title, productItem }) => {
       {title === "Big Discount" ? (
         <span className="discount">{productItem.discount}% Off</span>
       ) : null}
-      <img
-        loading="lazy"
-        onClick={() => handelClick()}
-        src={productItem.imgUrl}
-        alt=""
-      />
+      <div className="product-img-container">
+        <img
+          loading="lazy"
+          onClick={() => handelClick()}
+          src={productItem.imgUrl}
+          alt={productItem.productName || "Product"}
+        />
+      </div>
       <div className="product-like">
         <ion-icon name="heart-outline"></ion-icon>
       </div>
@@ -50,22 +52,17 @@ const ProductCard = ({ title, productItem }) => {
             <ion-icon name="add"></ion-icon>
           </button>
           <div>
-          <RWebShare
-                 data={{
-                  
-                  // src: `/(shop/${productItem.id})`,
-                  // src: `../shop/\${productItem.id}`,
-                       url:(`www.awwrange.in/shop/${productItem.id}`),
-               }}
-              
-         
-          >
-            <button> <ion-icon name="share"></ion-icon>
-            </button>
-
-          </RWebShare>
-
-
+            <RWebShare
+              data={{
+                text: productItem.shortDesc,
+                title: productItem.productName,
+                url: `${window.location.origin}/shop/${productItem.id}`,
+              }}
+            >
+              <button aria-label="Share">
+                <ion-icon name="share"></ion-icon>
+              </button>
+            </RWebShare>
           </div>
         
 

@@ -2,11 +2,11 @@ import Select from 'react-select';
 import { products } from '../utils/products';
 
 const options = [
-    // { value: "sofa", label: "Sofa" },
-    // { value: "chair", label: "Chair" },
-    // { value: "watch", label: "Watch" },
-    { value: "Tshirt", label: "Tshirt" },
-    // { value: "wireless", label: "Wireless" },
+    { value: "all", label: "All Products" },
+    { value: "T-Shirts", label: "T-Shirts" },
+    { value: "Mugs", label: "Mugs" },
+    { value: "Tote Bags", label: "Tote Bags" },
+    { value: "Custom Gifts", label: "Custom Gifts" },
 ];
 
 const customStyles = {
@@ -37,8 +37,12 @@ const customStyles = {
 
 const FilterSelect = ({setFilterList}) => {
     const handleChange = (selectedOption)=> {
-        setFilterList(products.filter(item => item.category ===selectedOption.value))
-    }
+        if (!selectedOption || selectedOption.value === "all" || selectedOption.value === "All Products") {
+            setFilterList(products);
+        } else {
+            setFilterList(products.filter(item => item.category === selectedOption.value));
+        }
+    };
     return (
     <Select
     options={options}
