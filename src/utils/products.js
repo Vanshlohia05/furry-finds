@@ -7,13 +7,9 @@ import custmug01 from "../Images/cust-mug-01.png";
 import tshirt11 from "../Images/t-shirt-11.png";
 import tshirt06 from "../Images/t-shirt-06.png";
 import tshirt10 from "../Images/t-shirt-10.png";
-import tshirt12 from "../Images/t-shirt-12.png";
-import tshirt13 from "../Images/t-shirt-13.png";
-import tshirt14 from "../Images/t-shirt-14.png";
 
 
 
-import bag01 from "../Images/bag-01.png";
 import bag02 from "../Images/bag-02.png";
 import bag03 from "../Images/bag-03.png";
 import mug02F from "../Images/mug-02-F.png";
@@ -24,21 +20,30 @@ import mug02F from "../Images/mug-02-F.png";
 export const SliderData = [
   {
       id: 1,
-      title: "New Arrival",
-      desc: "Soft, high-quality tees with bold prints. Made for everyday wear.",
-      cover: bag02,
+      badge: "? Premium Tees",
+      title: "Bold Graphic Streetwear",
+      desc: "Soft-spun combed cotton tees engineered for all-day comfort and expressive style.",
+      cover: tshirt02,
+      ctaText: "Shop T-Shirts",
+      categoryLink: "/shop",
   },
   {
       id: 2,
-      title: "Tote Collection",
-      desc: "Carry your world in style. Eco-friendly canvas totes for every occasion.",
-      cover: bag03,
+      badge: "?? Eco-Friendly",
+      title: "Artisan Canvas Totes",
+      desc: "Heavy-duty minimalist cotton canvas totes crafted for groceries, books, and coffee runs.",
+      cover: bag02,
+      ctaText: "Browse Totes",
+      categoryLink: "/shop",
   },
   {
       id: 3,
-      title: "Mug Collection",
-      desc: "Start your mornings right. Sleek ceramic mugs crafted for comfort.",
+      badge: "? Morning Rituals",
+      title: "Ceramic Keepsake Mugs",
+      desc: "Sleek ergonomic stoneware mugs designed to keep your brew piping hot.",
       cover: mug02F,
+      ctaText: "Discover Mugs",
+      categoryLink: "/shop",
   },
 ];
 

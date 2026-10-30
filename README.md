@@ -2,6 +2,9 @@
 
 Furry Finds is a hyper-minimalist, sleek e-commerce storefront for curated t-shirts, tote bags, and everyday lifestyle accessories.
 
+> [!NOTE]
+> This project is a customized fork of [`0mar-helal/multimart-react-ecommerce`](https://github.com/0mar-helal/multimart-react-ecommerce), originally created by Omar Helal, refactored and adapted into a custom WhatsApp-first storefront for Furry Finds.
+
 ## 📌 Live Demo
 *Coming soon on Vercel (`furryfinds.vercel.app`)*
 

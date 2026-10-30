@@ -36,7 +36,7 @@ const NavBar = () => {
     >
       <Container className="navbar-container">
         <Navbar.Brand to="/">
-          <ion-icon name="bag"></ion-icon>
+          <ion-icon name="paw"></ion-icon>
           <h1 className="logo">Furry Finds</h1>
         </Navbar.Brand>
         {/* Media cart and toggle */}

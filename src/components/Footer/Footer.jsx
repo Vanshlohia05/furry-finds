@@ -9,7 +9,7 @@ const Footer = () => {
           <Row className="footer-row">
             <Col md={3} sm={5} className='box'>
               <div className="logo">
-                  <ion-icon name="bag"></ion-icon>
+                  <ion-icon name="paw"></ion-icon>
                   <h1>Furry Finds</h1>
               </div>
               <h2>About Us</h2>

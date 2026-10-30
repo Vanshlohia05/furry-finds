@@ -1,45 +1,145 @@
-.homeSlide .box {
-    margin-top: 80px;
-    padding: 0 40px 60px;
+.homeSlide {
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2f6 100%);
+    padding: 40px 0 60px;
+    position: relative;
+    overflow: hidden;
 }
 
-.homeSlide h1 {
-    font-size: 45px;
-    line-height: 55px;
-    margin: 50px 0 20px 0;
+.homeSlide .slide-box {
+    padding: 40px 20px;
 }
 
-.homeSlide p {
-    margin: 20px 0;
+.slide-content {
+    padding-right: 30px;
 }
 
-.homeSlide ul {
-    position: absolute;
-    bottom: 20px;
-}
-
-.homeSlide ul li {
-    border: 2px solid #b8b7b7;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.homeSlide ul li button {
-    background: transparent !important;
-    color: transparent !important;
-}
-
-.homeSlide ul li button::before {
-    font-size: 15px !important;
+.slide-badge {
+    display: inline-block;
+    background: rgba(15, 52, 96, 0.08);
     color: #0f3460;
-    position: absolute;
-    top: 2px;
-    left: 0;
-    margin: auto;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
-.homeSlide .box img {
+.slide-title {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0f3460;
+    margin-bottom: 16px;
+}
+
+.slide-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 28px;
+    max-width: 480px;
+}
+
+.slide-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0f3460;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(15, 52, 96, 0.25);
+    transition: all 0.25s ease;
+}
+
+.slide-btn:hover {
+    background: #1a4980;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(15, 52, 96, 0.35);
+    color: #fff !important;
+}
+
+.slide-btn ion-icon {
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.slide-btn:hover ion-icon {
+    transform: translateX(4px);
+}
+
+.slide-image-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-img-backdrop {
+    position: relative;
     width: 100%;
+    max-width: 420px;
+    height: 340px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(240, 243, 246, 0.5) 70%);
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(15, 52, 96, 0.05);
+}
+
+.slide-img {
+    max-width: 100%;
     max-height: 300px;
     object-fit: contain;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.12));
+    transition: transform 0.4s ease;
+}
+
+.slide-img:hover {
+    transform: scale(1.04);
+}
+
+/* Slick Dots Styling */
+.homeSlide .slick-dots {
+    bottom: -10px;
+}
+
+.homeSlide .slick-dots li {
+    margin: 0 4px;
+}
+
+.homeSlide .slick-dots li button:before {
+    font-size: 10px;
+    color: #0f3460;
+    opacity: 0.25;
+    transition: all 0.25s ease;
+}
+
+.homeSlide .slick-dots li.slick-active button:before {
+    color: #0f3460;
+    opacity: 1;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .slide-title {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+    .slide-desc {
+        font-size: 14px;
+    }
+    .slide-img-backdrop {
+        height: 260px;
+        margin-top: 25px;
+    }
+    .slide-img {
+        max-height: 220px;
+    }
 }
